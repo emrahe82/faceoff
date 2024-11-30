@@ -1,3 +1,5 @@
+![Example Output](output.jpeg)
+
 # Face Segmentation with SAM and MediaPipe
 
 Script for combining Segment Anything Model (SAM) with MediaPipe face detection to segment images and detect facial features.

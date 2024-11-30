@@ -100,7 +100,7 @@ def show_anns(anns, image, face_landmarks):
 
 def main():
     # Read image
-    image = cv2.imread('./woman3.jpeg')
+    image = cv2.imread('./sample_images/woman2.jpeg')
     if image is None:
         print("Error: Could not read image")
         return
@@ -137,9 +137,16 @@ def main():
         plt.imshow(mask_image)
         plt.title('Segments and Landmarks')
     plt.axis('off')
+
+    # Save figure
+    plt.savefig('./output.jpeg', bbox_inches='tight', dpi=300)
+    plt.close()
     
-    plt.tight_layout()
-    plt.show()
+    print(f"Found {len(masks)} segments in the image")
+    print("Output saved as output.jpeg")
+
+    #plt.tight_layout()
+    #plt.show()
     
     print(f"Found {len(masks)} segments in the image")
 
