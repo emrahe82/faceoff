@@ -100,7 +100,7 @@ def show_anns(anns, image, face_landmarks):
 
 def main():
     # Read image
-    image = cv2.imread('./sample_images/woman2.jpeg')
+    image = cv2.imread('./sample_images/man_)
     if image is None:
         print("Error: Could not read image")
         return
@@ -122,7 +122,7 @@ def main():
     masks = mask_generator.generate(image)
     
     # Create side by side visualization
-    plt.figure(figsize=(10,5))
+    plt.figure(figsize=(6,3))
     
     # Original image on the left
     plt.subplot(1, 2, 1)
