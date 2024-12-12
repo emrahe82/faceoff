@@ -1,4 +1,4 @@
-![Example Output](output_.jpeg)
+![Example Output](output.jpeg)
 
 # Face Segmentation with SAM and MediaPipe
 

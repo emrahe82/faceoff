@@ -344,16 +344,16 @@ def main():
     plt.title('Segmented Human')
     plt.axis('off')
     
-    plt.subplot(1, 4, 3)
+    plt.subplot(1,4,3)
+    plt.imshow(segmented_parts)
+    plt.title('segmented parts')
+    plt.axis('off')
+
+    plt.subplot(1, 4, 4)
     plt.imshow(landmarks_overlay)
     plt.title('Parts + Landmarks')
     plt.axis('off')
 
-    plt.subplot(1,4,4)
-    plt.imshow(segmented_parts)
-    plt.title('segmented parts')
-    plt.axis('off')
-    
     plt.tight_layout()
     plt.savefig('./output.jpeg', bbox_inches='tight', dpi=300)
     plt.close()
